@@ -20,13 +20,25 @@
     <div class="black-bg">
         <div class="white-bg">
             <p>로그인 하세요</p>
-            <button id="close" style="background-color: #CD426B;">닫기</button>
+
+            <form action="login.php">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email" id="email">
+                  <p id="email-alert">이메일이 정확하지 않습니다.</p>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password" id="password">
+                  <p id="password-alert">비밀번호가 입력되지 않았습니다.</p>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+                <button id="close" type="button" class="btn btn-danger">닫기</button>
+              </form>
         </div>
     </div>
     
     <div class="nav-menu"> 
         <h4 style="margin: 0px">ABC Studio</h4>
-        <a id="nav-btn">Products</a>
+        <a id="nav-btn" style="cursor: pointer;">Products</a>
     </div>
 
     <ul class="list-group nav-sub">
@@ -45,8 +57,6 @@
     </div>
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
@@ -60,8 +70,23 @@
     -->
 
     <script>
+
+        $('form').on('submit' , function (e) {
+            if ($('#email').val() == '') {
+                e.preventDefault();
+                $('#email-alert').fadeIn();
+            }
+        });
+
+        $('form').on('submit' , function (e) {
+            if ($('#password').val() == '') {
+                e.preventDefault();
+                $('#password-alert').fadeIn();
+            }
+        })
+  
         $('#login').on('click', function (params) {
-            $('.black-bg').fadeIn();
+                $('.black-bg').fadeIn();
         });
 
         $('#close').on('click', function (params) {
@@ -71,6 +96,7 @@
         $('#nav-btn').on('click' , function (params) {
             $('.nav-sub').slideToggle();
         });
+
     </script>
 
 
