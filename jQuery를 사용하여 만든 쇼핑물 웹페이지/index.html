@@ -53,7 +53,7 @@
     </ul>
 
     <div class="jumbotron main-bg">
-        <h1 class="display-4">멋있는 단어</h1>
+        <h1 class="display-4">Online Shopping</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
             featured content or information.</p>
         <hr class="my-4">
@@ -62,6 +62,35 @@
         <a id="show-menu" class="bnt btn-success btn-lg" href="#" role="button">Show Menu</a>
     </div>
 
+    <h4 class="my-4 text-center">Showcase</h4>
+
+    <div style="overflow : hidden; position: relative">
+        <div class="slide-container">
+            <div class="slide-box">
+                <img src="1336398_2_500.jpg">
+            </div>
+
+            <div class="slide-box">
+                <img src="다운로드.jpg">
+            </div>
+
+            <div class="slide-box">
+                <img src="다운로드 (1).jpg">
+            </div>
+        </div>
+        <button class="slide-next">Next</button>
+        <button class="slide-Before">Before</button>
+    </div>
+
+    <br>
+
+    <div class="slide-btn">
+    <input class="btn btn-primary slide-1" type="button" value="1">
+    <input class="btn btn-primary slide-2" type="button" value="2">
+    <input class="btn btn-primary slide-3" type="button" value="3">
+    </div>
+
+    <div class="my-5"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -108,8 +137,46 @@
         //     }
         // });
 
+        // 슬라이드 스크립트
 
-        
+        var 지금보이는사진 = 1;
+
+        $('.slide-next').on('click', function () {
+            $('.slide-container').css('transform', 'translateX(-' + 지금보이는사진 + '00vw)');
+            if (지금보이는사진 < 2) {
+                지금보이는사진 = 지금보이는사진 + 1;
+            }
+        });
+
+        $('.slide-Before').on('click', function () {
+            $('.slide-container').css('transform', 'translateX(-' + (지금보이는사진 - 1) + '00vw)');
+            if (지금보이는사진 > 1) {
+                지금보이는사진 = 지금보이는사진 - 1;
+            }
+        });;
+
+        // $('.slide-next').on('click' , function () {
+        //     if (지금보이는사진 == 1 ) {
+        //         $('.slide-container').css('transform', 'translateX(-' + 지금보이는사진 +'00vw)');
+        //         지금보이는사진 = 지금보이는사진 + 1;
+        //     }else if(지금보이는사진 == 2) {
+        //         $('.slide-container').css('transform', 'translateX(-' + 지금보이는사진 + '00vw)');
+        //         지금보이는사진 = 지금보이는사진 + 1;
+        //     }
+        // });
+
+        $('.slide-1').on('click', function () {
+            $('.slide-container').css('transform', 'translateX(0vw)');
+        })
+
+        $('.slide-2').on('click', function () {
+            $('.slide-container').css('transform', 'translateX(-100vw)');
+        });
+
+        $('.slide-3').on('click', function () {
+            $('.slide-container').css('transform', 'translateX(-200vw)');
+        });
+
         // 에니메이션 스크립트
         $('#show-menu').on('click', function (params) {
             $('.left-menu').addClass('left-menuUp');
