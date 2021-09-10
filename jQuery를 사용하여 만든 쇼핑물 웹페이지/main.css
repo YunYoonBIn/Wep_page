@@ -53,6 +53,25 @@
     justify-content: space-between;
     padding: 15px;
     align-items: center;
+    background-color: transparent;
+    position: fixed;
+    color: black;
+    width: 100%;
+    z-index: 7;
+}
+
+.nav-black {
+    background: white;
+    color: black;
+}
+
+.large-logo {
+    font-size: 35px;
+    transition: all 0.5s;
+}
+
+.small-logo {
+    font-size: 22px;
 }
 
 .nav-sub {
@@ -83,12 +102,32 @@ h4 {
     position: fixed;
     transition: all 0.7s;
     transform: translateX(-500px);
-    z-index: 6;
+    z-index: 999;
 }
 
 .left-menuUp {
     transform: translateX(0px);
 }
+
+.left-close {
+    position: relative;
+    left: 100%; 
+    width: 30%;
+    top: 10%;
+}
+
+.left-menuDown {
+    transform: translateX(-500px);
+}
+
+.left-close p {
+    display: inline-block;
+    background: black;
+    color: white;
+    font-size: 130%;
+    cursor: pointer;
+}
+
 
 .login-menu {
     width: 100px;
@@ -119,7 +158,7 @@ h4 {
 .slide-next {
     position: absolute;
     top: 45%;
-    right: 30%;
+    right: 31%;
     border-radius: 5px;
   }
 

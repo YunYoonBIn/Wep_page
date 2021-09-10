@@ -19,6 +19,9 @@
 
     <div class="left-menu">
         <p>Menu Title</p>
+        <div class="left-close">
+            <p>Close<p>
+        </div>
     </div>
 
     <div class="black-bg">
@@ -42,7 +45,7 @@
     </div>
 
     <div class="nav-menu">
-        <h4 style="margin: 0px">ABC Studio</h4>
+        <h4 style="margin: 0px" class="large-logo">ABC Studio</h4>
         <a id="nav-btn" style="cursor: pointer">Products</a>
     </div>
 
@@ -85,9 +88,9 @@
     <br>
 
     <div class="slide-btn">
-    <input class="btn btn-primary slide-1" type="button" value="1">
-    <input class="btn btn-primary slide-2" type="button" value="2">
-    <input class="btn btn-primary slide-3" type="button" value="3">
+        <input class="btn btn-primary slide-1" type="button" value="1">
+        <input class="btn btn-primary slide-2" type="button" value="2">
+        <input class="btn btn-primary slide-3" type="button" value="3">
     </div>
 
     <div class="my-5"></div>
@@ -178,8 +181,13 @@
         });
 
         // 에니메이션 스크립트
+
         $('#show-menu').on('click', function (params) {
             $('.left-menu').addClass('left-menuUp');
+        });
+
+        $('.left-close').on('click', function (params) {
+            $('.left-menu').addClass('left-menuDown');
         });
 
         $('#login').on('click', function (params) {
@@ -193,6 +201,16 @@
         $('#nav-btn').on('click', function (params) {
             $('.nav-sub').slideToggle();
         });
+
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 100) {
+                $('.nav-menu').addClass('nav-black');
+                $('.nav-menu h4').addClass('small-logo');
+            } else {
+                $('.nav-menu').removeClass('nav-black');
+                $('.nav-menu h4').removeClass('small-logo');
+            }
+        }); 
     </script>
 
 
