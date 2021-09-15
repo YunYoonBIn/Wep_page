@@ -1,12 +1,24 @@
 * {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+    font-family: "Jua";
+    background-color: #316B83;
+    color: white;
 }
 
-h4 {
+@font-face {
+    font-family: "Jua";
+    src: url(Jua/Jua-Regular.ttf);
+}
+
+h1 {
     font-size: 40px;
+    padding: 30px;
 }
 
+h3 {
+    padding: 10px;
+}
 .test_dor {
     border: 1px solid black;
     border-radius: 5px;
@@ -53,3 +65,7 @@ input {
     width: 30%;
 }
 
+select {
+    border: 1px solid black;
+    border-radius: 5px;
+}
