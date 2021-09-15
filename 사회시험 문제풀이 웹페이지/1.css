@@ -1,0 +1,47 @@
+* {
+    font-size: 18px;
+    text-align: center;
+  }
+ 
+  h4 {
+    font-size: 40px;
+  }
+
+  .test_dor {
+     border: 1px solid  black;
+     border-radius: 5px;
+  }
+
+  .t1_modal {
+    display: none;
+  }
+
+  .t2_modal {
+    display: none;
+    position: relative;
+    left: 31.5%;
+  }
+
+  .t3_modal {
+    display: none;
+  }
+
+  .노동3권 {
+    position: relative;
+    left: 34%;
+  }
+  
+  .pdt_span {
+    position: relative;
+    left: 23%;
+  }
+  
+  .production_Cost {
+    position: relative;
+    left: 25%;
+  }
+  
+  input {
+    width: 30%;
+  }
+  

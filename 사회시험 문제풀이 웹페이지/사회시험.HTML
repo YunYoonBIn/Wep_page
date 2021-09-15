@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+
+    <div class="name">
+        <h4>즐거운^^ 사회 시험 요약</h4>
+    </div>
+    <div class="test_dor">
+        <div>
+            <h3>문제1)</h3>
+            <p> ##는 시장을 통해서는 제대로 공급되기 어려운 ###를 ##하고 ##한다.
+                <br />
+                <br />
+                ##에 들어갈 단어를 순서대로 적으시오.
+            </p>
+
+        </div>
+
+        <div>
+
+        </div>
+        <div>
+            <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
+            <p><button>체점</button> <button id="t1_btn">정답 보기</button></p>
+
+            <div class="t1_modal">
+                <p>정부는 시장을 통해서는 제대로 공급되기 어려운 공공제를 관리하고 생산한다.</p>
+            </div>
+        </div>
+    </div>
+    <br />
+<br>
+    <div class="test_dor">
+        <h3>문제2)</h3>
+        <div class="노동3권">
+            <table border="2">
+                <tr>
+                    <td colspan="10">
+                        노동 3권
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>단결권</th>
+                    <td>###들이 ## ##을 개선하기 위해 ####을 결성할 수 있는 ##</td>
+                </tr>
+
+                <tr>
+                    <th>단체 교섭권</th>
+                    <td>####을 통해 ###와 자주적으로 ## 할 수 있는 ##</td>
+                </tr>
+
+                <tr>
+                    <th>단체 행동권</th>
+                    <td>###와의 ## ##이 발생한 경우 ## 행동을 할 수 있는 ##</td>
+                </tr>
+            </table>
+        </div>
+        <br />
+
+        <p>##에 들어갈 단어를 순서대로 적으시오.</p>
+        <div>
+            <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
+            <p><button>체점</button> <button id="t2_btn">정답 보기</button></p>
+        </div>
+        <div class="t2_modal">
+            <table border="2">
+                <tr>
+                    <td colspan="10">
+                        노동 3권
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>단결권</th>
+                    <td>노동자들이 근로 조건을 개선하기 위해 노동조합을 결성할 수 있는 권리</td>
+                </tr>
+
+                <tr>
+                    <th>단체 교섭권</th>
+                    <td>노동조합을 통해 사용자와 자주적으로 교섭 할 수 있는 권리</td>
+                </tr>
+
+                <tr>
+                    <th>단체 행동권</th>
+                    <td>사용자와의 노사 분쟁이 발생한 경우 단체 행동을 할 수 있는 권리</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+    <br />
+<br>
+    <div class="test_dor">
+        <div>
+            <h3>문제3)</h3>
+            <p>특화</p>
+            <span>각 경제 주체들이 자신에게 ##한 ##와 ###만을 전문적으로 ##하는 것</span>
+        </div>
+
+        <p>##에 들어갈 단어를 순서대로 적으시오.</p>
+        <div>
+            <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
+            <p><button>체점</button> <button id="t3_btn">정답 보기</button></p>
+        </div>
+        <div class="t3_modal">
+            <p>각 경제 주체들이 자신에게 유리한 재화와 서비스만을 전문적으로 생산하는 것</p>
+        </div>
+    </div>
+
+    <br />
+<br>
+    <div class="test_dor">
+    <div>
+        <h3>문제4)</h3>
+        <p>상대적 생산비의 차이 때문에 무역을 한다고요?</p>
+        <span class="pdt_span">(단위 : 원)</span>
+        <div class="production_Cost">
+            <table border="1" width="50%" height="150" className="production_Cost_tb">
+                <tr>
+                    <th>구분</th>
+                    <th>자동차</th>
+                    <th>의류</th>
+                </tr>
+
+                <tr>
+                    <th>갑국</th>
+                    <td>50</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <th>을국</th>
+                    <td>300</td>
+                    <td>200</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('#t1_btn').on('click', function (params) {
+            $('.t1_modal').fadeIn();
+        });
+
+        $('#t2_btn').on('click', function (params) {
+            $('.t2_modal').fadeIn();
+        });
+
+        $('#t3_btn').on('click', function (params) {
+            $('.t3_modal').fadeIn();
+        });
+    </script>
+
+</body>
+
+</html>
