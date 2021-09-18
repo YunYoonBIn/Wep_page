@@ -19,9 +19,9 @@ h1 {
 h3 {
     padding: 10px;
 }
+
 .test_dor {
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid #316B83;
 }
 
 .t1_modal {
@@ -31,7 +31,7 @@ h3 {
 .t2_modal {
     display: none;
     position: relative;
-    left: 31.5%;
+    left: 33.8%;
 }
 
 .t3_modal {
@@ -43,6 +43,10 @@ h3 {
 }
 
 .t5_modal {
+    display: none;
+}
+
+#t6_modal {
     display: none;
 }
 
@@ -68,4 +72,9 @@ input {
 select {
     border: 1px solid black;
     border-radius: 5px;
+}
+
+#cap1 {
+    position: relative;
+    left: 92%;
 }

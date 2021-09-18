@@ -15,6 +15,7 @@
         <h1>즐거운^^ 사회 시험 테스트</h1>
     </div>
     <br>
+
     <div class="test_dor">
         <div>
             <h3>문제1)</h3>
@@ -41,8 +42,8 @@
             </div>
         </div>
     </div>
-    <br />
-    <br><br>
+    <br><br><br>
+
     <div class="test_dor">
         <h3>문제2)</h3>
         <div class="노동3권">
@@ -104,12 +105,12 @@
             <br>
         </div>
     </div>
-    <br />
-    <br><br>
+    <br><br><br>
+
     <div class="test_dor">
         <div>
             <h3>문제3)</h3>
-            <p>특화</p>
+            <p>특화 :</p>
             <span>각 경제 주체들이 자신에게 ##한 ##와 ###만을 전문적으로 ##하는 것</span>
         </div>
 
@@ -124,9 +125,8 @@
             <p>각 경제 주체들이 자신에게 유리한 재화와 서비스만을 전문적으로 생산하는 것</p>
         </div>
     </div>
+    <br><br><br>
 
-    <br />
-    <br><br>
     <div class="test_dor">
         <div>
             <h3>문제4)</h3>
@@ -167,10 +167,7 @@
             </div>
         </div>
     </div>
-
     <br><br><br>
-
-    </div>
 
     <div class="test_dor">
         <h3>문제5)</h3>
@@ -314,7 +311,123 @@
             <span><b>볼리비아</b> : </span> <span>천연가스</span>
         </div>
     </div>
+    <br><br><br>
+
+    <div class="test_dor">
+        <div>
+            <h3>문제6)</h3>
+            <p>우리나라의 5대 수출 상품의 변화 추이</p>
+        </div>
+
+        <div>
+            <table class="table caption-top">
+                <caption id="cap1" style="color: white;">(단위 : 백만 달러)</caption>
+                <thead>
+
+                    <tr>
+                        <th scope="col">순위 \ 구분</th>
+                        <th scope="col">품목</th>
+                        <th scope="col">수출액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>###</td>
+                        <td>341.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>##</td>
+                        <td>91.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>##</td>
+                        <td>90.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>###</td>
+                        <td>49.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>####</td>
+                        <td>29.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">총 수출액</th>
+                        <td>8.353</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <p>1위부터 5위까지 품목을 적으세요.</p>
+            <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
+            <br><br>
+            <p><button type="button" class="btn btn-success">체점</button> <button type="button" class="btn btn-warning"
+                    id="t6_btn">정답 보기</button></p>
+        </div>
+        <div>
+            <table class="table caption-top" id="t6_modal">
+                <caption id="cap1" style="color: white;">(단위 : 백만 달러)</caption>
+                <thead>
+
+                    <tr>
+                        <th scope="col">순위 \ 구분</th>
+                        <th scope="col">품목</th>
+                        <th scope="col">수출액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>섬유류</td>
+                        <td>341.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>합판</td>
+                        <td>91.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>가발</td>
+                        <td>90.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>철광석</td>
+                        <td>49.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>전자제품</td>
+                        <td>29.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">총 수출액</th>
+                        <td>8.353</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+    <br><br><br>  
+
+    <div class="test_dor">
+        
+    </div>
+
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -341,6 +454,10 @@
 
         $('#t5_btn').on('click', function (params) {
             $('.t5_modal').fadeIn();
+        })
+
+        $('#t6_btn').on('click', function (params) {
+            $('#t6_modal').fadeIn();
         })
     </script>
 
