@@ -24,46 +24,18 @@ h3 {
     border: 1px solid #316B83;
 }
 
-.t1_modal {
+.t1_modal , .t2_modal , .t3_modal , .t4_modal ,
+.t5_modal , #t6_modal , .t7_modal , .t8_modal ,
+.t9_modal , .t10_modal , .t11_modal , .t12_modal,
+.t13_modal , .t14_modal , .t15_modal , .t16_modal,
+.t17_modal
+{
     display: none;
 }
 
 .t2_modal {
-    display: none;
     position: relative;
     left: 33.8%;
-}
-
-.t3_modal {
-    display: none;
-}
-
-.t4_modal {
-    display: none;
-}
-
-.t5_modal {
-    display: none;
-}
-
-#t6_modal {
-    display: none;
-}
-
-.t7_modal {
-    display: none;
-}
-
-.t8_modal {
-    display: none;
-}
-
-.t9_modal {
-    display: none;
-}
-
-.t10_modal {
-    display: none;
 }
 
 .노동3권 {
@@ -83,6 +55,7 @@ h3 {
 
 input {
     width: 30%;
+    border-radius: 8px;
 }
 
 select {
