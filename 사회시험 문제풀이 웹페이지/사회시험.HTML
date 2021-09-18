@@ -113,7 +113,7 @@
             <p>특화 :</p>
             <span>각 경제 주체들이 자신에게 ##한 ##와 ###만을 전문적으로 ##하는 것</span>
         </div>
-
+<br>
         <p>##에 들어갈 단어를 순서대로 적으시오.</p>
         <div>
             <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
@@ -358,8 +358,8 @@
                     </tr>
                     <tr>
                         <th scope="row">총 수출액</th>
-                        <td>8.353</td>
                         <td></td>
+                        <td>8.353</td>
                     </tr>
                 </tbody>
             </table>
@@ -411,8 +411,8 @@
                     </tr>
                     <tr>
                         <th scope="row">총 수출액</th>
-                        <td>8.353</td>
                         <td></td>
+                        <td>8.353</td>
                     </tr>
                 </tbody>
             </table>
@@ -421,11 +421,67 @@
     <br><br><br>  
 
     <div class="test_dor">
-        
+        <div>
+            <h3>문제7)</h3>
+            <p>국제 거래로 얻을 수 있는 이익</p>
+        </div>
+
+        <div>
+            ###는 다양한 ##와 ### 가운데서 질 좋고 ###것을 선택할 수 있어 보다 ###운 ## ##을 할 수 있다.
+        </div>
+<br>
+        <div>
+           기업은 세계 시장을 대상으로 상품을 거래하게 되므로 ### ##를 이루어 ###를 절감할 수 있고, 더 많은 제품을 판매하여 높은 ##을 얻을 수 있다. 
+           <br>
+           한편으로 세계의 ###들에게 선택받을 수 있는 제품을 생산하기 위해 끊임없는 기술 개발과 ## ##가 이루어진다.
+        </div>
+<br>
+        <div>
+            <p>##에 들어갈 단어를 순서래도 적으시오.</p>
+            <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
+            <br><br>
+            <p><button type="button" class="btn btn-success">체점</button> <button type="button" class="btn btn-warning"
+                    id="t7_btn">정답 보기</button></p>
+        </div>
+
+        <div class="t7_modal">
+            소비자는 다양한 재화와 서비스 가운데서 질 좋고 저렴한것을 선택할 수 있어 보다 풍요로운 소비 생활을 할 수 있다.
+            <br><br>
+            기업은 세계 시장을 대상으로 상품을 거래하게 되므로 규모의 경제를 이루어 생산비를 절감할 수 있고, 더 많은 제품을 판매하여 높은 이윤을 얻을 수 있다. 
+            <br>
+            한편으로 세계의 소비자들에게 선택받을 수 있는 제품을 생산하기 위해 끊임없는 기술 개발과 품질 관리가 이루어진다.
+        </div>
     </div>
+    <br><br><br> 
 
+    <div class="test_dor">
+        <div>
+            <h3>문제8)</h3>
+            <p>자유 무역 협정</p>
+        </div>
 
+        <div>
+            자유 무역 협정(### : #ree #rade #greement)이란
+            <br>
+             ## #에 상품이나 서비스를 ##에서 ## 및 ## ##을 ##하거나 ##하는 ## ## ##을 말한다.
+        </div>
 
+        <br>
+        <div>
+            <p>##에 들어갈 단어를 순서래도 적으시오.</p>
+            <input type="text" placeholder="꼭 순서대로 적으세요 ex) ##,#,###" />
+            <br><br>
+            <p><button type="button" class="btn btn-success">체점</button> <button type="button" class="btn btn-warning"
+                    id="t8_btn">정답 보기</button></p>
+        </div>
+
+        <div class="t8_modal">
+            자유 무역 협정(FTA : Free Trade Agreement)이란
+            <br>
+            국가 간에 상품이나 서비스를 교역에서 관세 및 무역 장벽을 완화하거나 제거하는 경제 통합 협정을 말한다.
+        </div>
+    </div>
+    <br><br><br>
 
 
 
@@ -458,6 +514,14 @@
 
         $('#t6_btn').on('click', function (params) {
             $('#t6_modal').fadeIn();
+        })
+
+        $('#t7_btn').on('click', function (params) {
+            $('.t7_modal').fadeIn();
+        })
+
+        $('#t8_btn').on('click', function (params) {
+            $('.t8_modal').fadeIn();
         })
     </script>
 
