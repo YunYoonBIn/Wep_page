@@ -1,0 +1,46 @@
+* {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Jua";
+    background-color: #316B83;
+    color: white;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: "Jua";
+    src: url(Jua/Jua-Regular.ttf);
+}
+
+h1 {
+    font-size: 40px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 35px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.a {
+    display: none;
+}
+
+textarea {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 60%;
+    height: 100%;
+}
+
+span {
+    color: red;
+}
+
+.b {
+    display: none;
+}
