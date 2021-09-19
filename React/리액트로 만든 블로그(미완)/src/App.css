@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .black-nav {
   background-color: black;
   width: 100%;
@@ -32,6 +27,10 @@
   margin-top: 20px;
   padding: 20px;
   background-color: #eee;
+}
+
+h3 {
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -63,3 +62,4 @@
     transform: rotate(360deg);
   }
 }
+
