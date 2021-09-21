@@ -24,6 +24,7 @@ h2 {
     width: 50%;
     position: relative;
     left: 25%;
+    border-radius: 10px;
 }
 
 .a {
@@ -32,7 +33,7 @@ h2 {
 
 textarea {
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 60%;
     height: 100%;
 }
@@ -41,6 +42,14 @@ span {
     color: red;
 }
 
-.b {
+.b , .c {
     display: none;
+}
+
+b {
+    color: blanchedalmond;
+}
+
+button {
+    border: 1px solid black;
 }
