@@ -15,9 +15,9 @@
 } */
 
 .main-bg {
-    background-image: url(2773244A561364D210.jpg);
+    background-image: url(f39532d4217b5756ae1aae3060c68726d3906ed251eecf0bba5f465b1097f66a_v1.jpg);
     background-size: cover;
-    color: blue;
+    color: black;
     border-radius: 0px;
 }
 
@@ -111,7 +111,7 @@ h4 {
 
 .left-close {
     position: relative;
-    left: 100%; 
+    left: 100%;
     width: 30%;
     top: 10%;
 }
@@ -160,7 +160,7 @@ h4 {
     top: 45%;
     right: 31%;
     border-radius: 5px;
-  }
+}
 
 .slide-Before {
     position: absolute;
@@ -171,4 +171,46 @@ h4 {
 
 .slide-btn {
     text-align: center;
+}
+
+ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tab-button {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    float: left;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active {
+    border-top: 2px solid orange;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid white;
+    border-left: 1px solid #ccc;
+    color: black;
+    margin-top: -2px;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+
+.show {
+    display: block;
 }
