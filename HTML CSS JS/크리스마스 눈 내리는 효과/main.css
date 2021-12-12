@@ -1,0 +1,89 @@
+body {
+    /* 높이를 강제로 지정 */
+    height: 100vh;
+
+    /* 원형 그라데이션으로 자연스럽게 배경색 적용 */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100% );
+
+    /* 웹 브라우저를 넘어가는 상황이 있더라도 강제로 가림  */
+    overflow: hidden;
+}
+
+/* 눈 모양 만들기 */
+.snow {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+
+    /* 애니메이션 효과 적용 */
+    animation:
+    /* snow라는 키 프레임 사용 */
+    snow 
+    /* 10초동안 균일한 속도로 무한히  반복하게*/
+    10s linear infinite;
+}
+
+/* 2의 배수에 해당하는 snow태그 */
+.snow:nth-of-type(2n) {
+    width: 7px;
+    height: 7px;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+/* 2n+1의 배수에 해당하는 snow태그 */
+.snow:nth-of-type(2n+1) {
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+/* 9의 배수에 해당하는 snow태그 */
+.snow:nth-of-type(9n) {
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+
+/* 눈이 아래로 내려가는 애니메이션 효과 만들기 */
+@keyframes snow {
+    0% {
+        /* 0% 일땐 투명도 0 */
+        opacity: 0;
+
+        /* 시작 위치는 Y값 0 */
+        transform: translateY(0);
+    }
+        
+    
+    /* 좌우로 움직이는 애니메이션 만들기 */
+    20% {
+        /* 20% 일땐 투명도 0.5 */
+        opacity: 0.5;
+
+        /* X와 Y값 동시에 적용 */
+        transform: translate(-12px, 20vh);
+    }
+    40% {    
+        /* 40% 일땐 투명도 0.8 */
+        opacity: 0.8;
+        transform: translate(12px, 40vh);
+    }
+    60% {
+
+        /* 60% 부터 투명도 1 */
+        opacity: 1;    
+        transform: translate(-12px, 60vh);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(0, 80vh);
+    }
+
+
+    100% {
+        /* 100% 일땐 투명도 1 */
+        opacity: 1;
+
+        /* 끝나는 위치는 Y값 100vh */
+        transform: translateY(100vh);
+    }
+}
