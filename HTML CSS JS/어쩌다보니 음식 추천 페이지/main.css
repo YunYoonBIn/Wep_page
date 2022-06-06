@@ -1,0 +1,68 @@
+:root {
+    /* color */
+    --back-color: rgb(235, 235, 235);
+    --main-color: rgb(208, 209, 205);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--back-color);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+nav,
+main {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 0px;
+    background-color: var(--back-color);
+    margin: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:nth-child(1)::after {
+    position: relative;
+    left: 15px;
+    content: "";
+    border: 1px solid black;
+    cursor: default;
+}
+
+button:nth-child(2)::after {
+    position: relative;
+    left: 15px;
+    content: "";
+    border: 1px solid black;
+    cursor: default;
+}
+
+section:nth-child(1) {
+    padding: 30px;
+    text-align: center;
+    width: 20%;
+}
+
+section:nth-child(2) {
+    padding: 30px;
+    text-align: center;
+    width: 20%;
+}
+
+main {
+    margin: 0 auto;
+    background-color: var(--main-color);
+    width: 50%;
+    height: 13vh
+}

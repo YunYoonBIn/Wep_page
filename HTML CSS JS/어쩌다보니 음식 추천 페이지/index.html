@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>랜덤 음식 추첨기</h1>
+
+    <nav>
+        <form onsubmit="return false;">
+            <button class="snackBtn" onclick="randomSnack()">디저트 종류 뽑기</button>
+            <button class="riceBtn" onclick="randomRice()">한식 종류 뽑기</button>
+            <button class="WfBtn" onclick="randomWf()">양식 종류 뽑기</button>
+        </form>
+    </nav>
+
+    <main>
+        <section>
+            <p>음식 이름</p>
+            <h2 id="food"></h2>
+        </section>
+
+
+        <section>
+            <p>예상 가격</p>
+            <h2 id="price"></h2>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
